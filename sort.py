@@ -1,0 +1,1 @@
+sorted("This is a test string from Andrew".split())
