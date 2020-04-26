@@ -1,15 +1,17 @@
-N = int(input()) #N * 2
+N = int(input())
 
-for i in range(0, N * 2):
-    if N <= 3:
-        if i % 2 == 0:
-            print(('*' + ' ') * round(N / 2))
-        else:
-            print((' ' + '*') * (round(N / 2)))
+if N == 1:
+    print('*')
+
+else:
+    if N % 2 == 0:
+        a = '* ' * (N // 2)
+        b = ' *' * (N // 2)
+
     else:
-        if i  % 2 == 0:
-            print(('*' + ' ') * round(N / 2))
-        else:
-            print((' ' + '*') * (round(N / 2)))
+        a = '* ' * (N // 2) + '*'
+        b = ' *' * (N // 2)
 
-
+    for i in range(N):
+        print(a)
+        print(b) 

@@ -1,1 +1,1 @@
-sorted("This is a test string from Andrew".split())
+print( round(3 // 2))
