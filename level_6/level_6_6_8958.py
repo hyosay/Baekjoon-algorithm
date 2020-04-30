@@ -1,15 +1,14 @@
 count = 0
 count1 = 0
 a = 0
-ox_list = []
 for i in range(int(input())):
-    ox_list.append(str(input()))
-
-for k in range(5):
-   ox_list[0][k]
-    if k == 'o':
-        count = count + 1
-    elif i == 'x':
-        count = 0
-    count1 = count1 + count
+    count1 = 0
+    count = 0
+    ox = str(input())
+    for k in ox:
+        if k == 'O':
+            count = count + 1
+        elif k == 'X':
+            count = 0
+        count1 = count1 + count
     print(count1)
