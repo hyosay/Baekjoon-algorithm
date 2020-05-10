@@ -7,5 +7,6 @@ for i in num: # 123, 345
 print(max(rev1))
 
 #shot coding
+
 print(max(input()[::-1].split()))
 
