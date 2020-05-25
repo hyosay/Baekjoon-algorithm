@@ -1,2 +1,2 @@
-a = ['ab ','b', 'c', 'd']
-print(''.join(a))
+seasons = ['spring', 'summer', 'fail', 'winter']
+print(list(enumerate(seasons)))0
