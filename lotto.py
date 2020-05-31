@@ -22,12 +22,16 @@ def random_number_machine():
 
 my_number = list(map(int, input().split()))
 
-for k in range(1, 5):
+for k in range(1, 6):
     print(k,'회차 :',end = ' ')
     random_number_machine()
+    print()
 
-for q in range()
-    if my_number[k]
+for q in "hello":
+    q = []
+    for w in range(0, 7):
+        q.append(random.randint(1, 46))
+    print()
 
 
 
