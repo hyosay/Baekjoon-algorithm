@@ -20,6 +20,8 @@ def random_number_machine():
 
 
 
+
+
 my_number = list(map(int, input().split()))
 
 for k in range(1, 6):
@@ -27,11 +29,6 @@ for k in range(1, 6):
     random_number_machine()
     print()
 
-for q in "hello":
-    q = []
-    for w in range(0, 7):
-        q.append(random.randint(1, 46))
-    print()
 
 
 
