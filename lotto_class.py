@@ -13,11 +13,6 @@ class number:
         return self.lotto_number
 
 round_1 = number()
-round_2 = number()
-round_3 = number()
-round_4 = number()
-round_5 = number()
-for i in range():
-    print(i,"번째",round_1.random_machine())
 
 
+print(round_1.random_machine())
