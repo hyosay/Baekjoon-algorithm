@@ -1,2 +1,4 @@
-seasons = ['spring', 'summer', 'fail', 'winter']
-print(list(enumerate(seasons)))0
+c = 7 & 4
+print(c)
+
+01

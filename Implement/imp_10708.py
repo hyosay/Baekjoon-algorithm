@@ -10,7 +10,6 @@ JOI는 타겟으로 고른 친구에게, 타겟이 되었다는 것을 몰래 �
 추가로, 예상이 빗나간 사람의 수가 X명일 경우, 타겟은 추가로 X점을 얻습니다.
  JOI와 친구들은 이 게임을 M번 했습니다. M번의 게임을 했을 때, 각 친구들의 합계 점수를 구하세요.
 '''
-
 turn = int(input())
 friend_number = int(input())
 target = list(map(int, input().split()))
