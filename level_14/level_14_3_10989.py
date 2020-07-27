@@ -14,4 +14,4 @@ print(array_count)
 array_sum[0] = array_count[0]
 for i in range(1, 12):
     array_sum[i] = array_sum[i - 1] + array_count[i]
-print(array _sum)
+print(array_sum)

@@ -1,11 +1,6 @@
-N = int(input())
-if 90 <= N and N <= 100:
-    print("A")
-elif 80 <= N and N <= 89:
-    print("B")
-elif 70 <= N and N <= 79:
-    print("C")
-elif 60<= N and N <= 69:
-    print("D")
-else:
-    print("F")
+def solve(a):
+    sum = 0
+    for i in a:
+        sum += i
+    return sum
+print(solve([a for a in range(0,11) if a % 2== 0]))
