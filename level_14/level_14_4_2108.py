@@ -31,9 +31,11 @@ def n3(N):
         if temp <= mi[k + kill]:
             temp = mi[k + kill]
             a.append(k)
-    print(mi)
     if len(a) <= 2:
-        return a[0]
+        if a[0] < 0:
+            return a[1]
+        else:
+            return a[0]
     else:
         return a[1]
 

@@ -1,4 +1,4 @@
-array = [1,3,8, 2, -2, -1,]
+array = [-1,-2, -3, -1, -2]
 
 for i in range(0, len(array)):
     if array[i] < 0:
@@ -27,6 +27,12 @@ for k in range(-kill, len(mi) - kill):
 
 print(a)
 if len(a) <= 2:
-    print(a[0])
+    if a[0] < 0:
+        print(a[1])
+    else:
+        print(a[0])
 else:
     print(a[1])
+for i in a:
+
+

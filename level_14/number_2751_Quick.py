@@ -20,7 +20,7 @@ def Quicksort(data, start, end):
             data[R], data[pivot] = data[pivot], data[R]
 
     Quicksort(data, start, R - 1)
-    Quicksort(data,L + 1, end)
+    Quicksort(data,R + 1, end)
 
 Quicksort(a, 0, N - 1)
 for i in range(0, N):
