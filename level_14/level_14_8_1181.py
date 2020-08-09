@@ -1,12 +1,14 @@
 N = int(input())
 arp = []
-larp = []
-c = []
+
 for i in range(0, N):
     arp.append(input())
-    larp.append(len(arp[i]))
-    c.append([arp[i], larp[i]])
+arp = list(set(arp))
 
-c = sorted(c, key= lambda x: (x[1],x[0]))
-c = set()
-print(c)
+list_arp = []
+for j in arp:
+    list_arp.append((len(j), j))
+print(list_arp)
+list_arp.sort()
+for i in range(len(list_arp)):
+    print(list_arp[i][1])

@@ -1,13 +1,15 @@
-import sys
-N = int(sys.stdin.readline())
-xy = [list(map(int, sys.stdin.readline().split())) for xy in range(0, N)]
+'''N = int(input())
+xy = [list(map(int, input().split())) for xy in range(0, N)]
+xy = sorted(xy, key= lambda x: x[-1], reverse= False)
+for i in range(0, N):
+    print(xy[i][0], xy[i][1])
+
 '''
-for i in range(N):
-    min = 999
-    for j in range(i, N):
-        if min > xy[j][1]:
-            min = xy[j][1]
-            xy[i],xy[j] = xy[j], xy[i]
-for i in range(N):
-    print(xy[i][0], xy[i][1])'''
-xy = sorted(xy, key= lambda)
+import sys
+n = int(sys.stdin.readline())
+xy  = []
+for i in range(n):
+    xy.append(list(map(int, sys.stdin.readline().split())))
+xy.sort(key= lambda x: (x[1],x[0]))
+for i in xy:
+    print(i[0],i[1])

@@ -1,13 +1,12 @@
-N = int(input())
+import sys
+N = int(sys.stdin.readline())
 member_list = []
 member_list_1= []
 for i in range(N):
-    member_list.append(input().split())
+    member_list.append(sys.stdin.readline().split())
     member_list_1.append((int(member_list[i][0]), member_list[i][1]))
 
-## 여기서 부터
-for i in range(0, N):
-    for j in range(0, N - 1):
-        if member_list_1[j][0] < member_list_1[j + 1][0]:
-            member_list_1[j][0], member_list_1[j + 1][0] = member_list_1[j + 1][0],member_list_1[j][0]
-            print(member_list_1)
+
+member_list_1 = sorted(member_list_1, key= lambda x: x[0])
+for i, j in member_list_1:
+    print(i, j)

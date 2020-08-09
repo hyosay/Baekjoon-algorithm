@@ -1,1 +1,0 @@
-for i, j in [map(int, input().split())]
