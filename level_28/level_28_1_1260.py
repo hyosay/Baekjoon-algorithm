@@ -2,20 +2,23 @@ n, m, v = map(int, input().split())
 
 graph = []
 for i in range(m):
-    graph.append(sorted(list(map(int, input().split()))))
-graph.insert(0, [])
-print(graph)
-#dfs
-def dfs(graph, d, visited):
-    visited[d] = True
-    print(d, end = ' ')
+    graph = [[0] * (n + 1) for i in range(n + 1)]
 
-    for i in graph[d]:
-        if not visited[i]:
+for i in range(m):
+    x, y = map(int,input().split())
+    graph[x][y] = 1
+    graph[y][x] = 1
+print(graph)
+
+
+def dfs(graph, v, visited):
+    visited[v] = True
+    print(v, end= " ")
+
+    for i in range(1, n + 1):
+        if visited[i] == 0 and graph[v][i] == 1:
             dfs(graph, i, visited)
 
+visited = [False] * (n + 1)
 
-
-
-visited = [False] * (m + 1)
 dfs(graph, v, visited)
