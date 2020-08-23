@@ -18,6 +18,3 @@ for i in range(0, turn + 1):
     a = list(map(int, input(). split()))
     for j in range(0, friend_number + 1):
         if target[i] == a[j]:
-
-
-

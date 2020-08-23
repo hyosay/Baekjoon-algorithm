@@ -2,8 +2,7 @@ import sys
 stack = []
 def push(x):
     stack.append(x)
-
-def pop():
+def pop1():
     if not stack:
         return -1
     else:
@@ -14,6 +13,7 @@ def empty():
     return 0 if stack else 1
 def top():
     return stack[-1] if stack else -1
+
 N = int(sys.stdin.readline().rstrip())
 for _ in range(N):
     input_split = sys.stdin.readline().rstrip().split()
@@ -22,7 +22,7 @@ for _ in range(N):
     if order == 'push':
         push(input_split[1])
     elif order == 'pop':
-        print(pop())
+        print(pop1())
     elif order == 'size':
         print(size())
     elif order == 'empty':
